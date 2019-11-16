@@ -1,0 +1,12 @@
+.box{
+    height:100px;
+    width:100px;
+    background-color: blueviolet;
+}
+
+.circle{
+    height:100px;
+    width:100px;
+    background-color: darkgoldenrod;
+    border-radius: 100%;
+}
