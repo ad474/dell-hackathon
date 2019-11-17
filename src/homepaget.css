@@ -1,0 +1,36 @@
+.jumbotron{
+    text-align: center;
+    padding: 0px;
+  }
+  
+  body{
+    padding: 0px;
+  }
+  .row{
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 20px;
+  }
+  .images{
+    width:350px;
+    height: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  p{
+    padding: 5px;
+  }
+
+  .tryresize{
+    resize: both;
+    overflow: auto;
+  }
+  
+  .fixoverflow{
+        display:flex;
+    }
+
+    #tryresize{
+        resize:horizontal;
+        overflow: auto;
+    }

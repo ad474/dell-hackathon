@@ -1,12 +1,24 @@
-.box{
-    height:100px;
-    width:100px;
-    background-color: blueviolet;
+.sidebar{
+    background-color: darkslategrey;
+    width:20%;
+    height:100vh;
+}
+body{
+    margin:0;
 }
 
-.circle{
-    height:100px;
-    width:100px;
-    background-color: darkgoldenrod;
-    border-radius: 100%;
+.fixoverflow{
+    display:flex;
+}
+
+/* .Sidebar{
+    float:left;
+}
+
+.p{
+    float:left;
+} */
+
+#resize{
+    background-color: darkviolet;
 }
