@@ -1,12 +1,11 @@
 import React, {Component} from 'react';
-import Sidebar from './Sidebar';
+import './App.css';
  
 export default class BlankTemplate extends Component{
     render(){
         return(
             <div class="fixoverflow">
-                <Sidebar/>
-                <p>Blank</p>
+                <p>{this.props.rendercomponents}</p>
             </div>
         );
     }

@@ -5,6 +5,7 @@
     height: 350px;
     margin:auto;
     margin-top:15%;
+    margin-left: 30%;
     padding:15px;
     /* position: absolute;
     top: 50%; left: 50%;
@@ -14,7 +15,7 @@
   
   .bg{
     background-color: black;
-    width:80%;
+    width:100%;
     /* position:fixed;
     width:80%;
     height: 100%;

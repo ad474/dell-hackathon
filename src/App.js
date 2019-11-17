@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import {BrowserRouter as Router, Route,Switch,Link,Redirect} from 'react-router-dom';
+import {BrowserRouter as Router, Route,Switch,Redirect} from 'react-router-dom';
 import Homepage from './Homepage';
-import BlankTemplate from './BlankTemplate';
-import LoginTemplate from './LoginTemplate';
-import HomepageTemplate from './HomepageTemplate';
+import BlankTemplate from './SidebarBlank';
+import LoginTemplate from './SidebarLogin';
+import HomepageTemplate from './SidebarHomepage';
 import NewsletterTemplate from './NewsletterTemplate';
 import NotFound from "./NotFound";
 

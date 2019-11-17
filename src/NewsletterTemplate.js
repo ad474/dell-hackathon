@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import "./newslettert.css";
-import Sidebar from './Sidebar';
+import Sidebar from './SidebarBlank';
  
 export default class NewsletterTemplate extends Component{
     render(){

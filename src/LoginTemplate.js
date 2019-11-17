@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Sidebar from './Sidebar';
 import "./logint.css";
  
 export default class LoginTemplate extends Component{
@@ -23,8 +22,8 @@ export default class LoginTemplate extends Component{
     render(){
         return(
             <div className="fixoverflow">
-                <Sidebar/>
                 <div className="bg">
+                {this.props.rendercomponents}
                     <div className="signin">
                         <h1 className = 'siLbl'>Sign In</h1>
                         <br/> <br/>

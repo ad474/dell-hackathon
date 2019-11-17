@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import "./homepaget.css";
-import Sidebar from './Sidebar';
+// import Sidebar from './SidebarBlank';
  
 export default class HomepageTemplate extends Component{
     render(){
         return(
             <div className="fixoverflow">
-                <Sidebar/>
+                {this.props.rendercomponents}
                 <div>
   <div className="container">
   <nav class="navbar navbar-light bg-dark">

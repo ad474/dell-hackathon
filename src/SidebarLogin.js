@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import './App.css';
+import LoginTemplate from './LoginTemplate';
 
-export default class Sidebar extends Component{
+export default class SidebarLogin extends Component{
     // state={
     //     componentsArray:[]
     // };
@@ -23,6 +24,7 @@ export default class Sidebar extends Component{
             componentsArray: this.state.componentsArray.concat(<button>Button</button>)
         });
         console.log(this.state.componentsArray);
+        
     }
     h1click() {
         this.setState({
@@ -44,14 +46,17 @@ export default class Sidebar extends Component{
       }
     render(){
         return(
-            <div class="sidebar">
-                <button onClick={this.buttonclick}>Button</button>
-                <button onClick={this.h1click}>H1</button>
-                <button onClick={this.h2click}>H2</button>
-                <button onClick={this.tfclick}>Textfield</button>
-                <br/>
-                {this.state.componentsArray}
+            <div class="fixoverflow">
+                <div class="sidebar">
+                    <button onClick={this.buttonClick}>Button</button>
+                    <button onClick={this.h1click}>H1</button>
+                    <button onClick={this.h2click}>H2</button>
+                    <button onClick={this.tfclick}>Textfield</button>
+                    <br/>
+                </div>
+                <LoginTemplate rendercomponents={this.state.componentsArray}/>
             </div>
+            
         );
     }
 }
