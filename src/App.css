@@ -31,3 +31,57 @@ body{
     width:30%;
     background-color: lightblue;
 }
+.mapdiv{
+    height:200px;
+    width:200px;
+}
+.jumbotron{
+  width: 1500px;
+  height: 250px;
+}
+
+.imagebody{
+  width:250px;
+  height:150px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 5px;
+}
+
+.navbar-brand{
+  color: white;
+}
+
+.image_bg{
+  width: 900px;
+  height: 200px
+}
+
+.bg {
+background-image: url("C:\Users\Komal\Documents\GitHub\dell-hackathon\src\splash-1763305_1280.png");
+height: 100vh;
+background-position: center;
+background-repeat: no-repeat;
+background-size:contain;
+}
+.jumbotron{
+  background-color: #cfb6c4;
+  font-style: italic;
+  font-family: cursive;
+  font:
+}
+.headers{
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  font-style: italic;
+}
+.image_template{
+  width: 250px;
+  height: 150px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-top: 5px;
+  margin: 30px;
+}
