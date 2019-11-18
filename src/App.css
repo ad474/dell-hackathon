@@ -23,7 +23,11 @@ body{
     background-color: darkviolet;
 }
 
-.mapdiv{
-    height:200px;
-    width:200px;
+.buttonprompt{
+    position: absolute;
+    left:200px;
+    top:50px;
+    height:15%;
+    width:30%;
+    background-color: lightblue;
 }

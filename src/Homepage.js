@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import "./App.css";
 // import MainContent from './MainContent';
 // import Buttons from './Buttons';
 import {Link} from 'react-router-dom';
@@ -7,10 +8,6 @@ export default class Homepage extends Component{
     render() {
         return (
             <div>
-                
-                {/* <div id="resizable">
-                    <h1>ARE YOU EVEN WORKING</h1>
-                </div> */}
                 Is this even working?
                 <Link to="/blanktemplate">Blank</Link>
                 <br/>

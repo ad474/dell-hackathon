@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import './App.css';
 import BlankTemplate from './BlankTemplate';
+import Button from "./Button";
+import ButtonPrompt from './ButtonPrompt';
 import Draggable from 'react-draggable';
 
 export default class Sidebar extends Component{
@@ -11,28 +13,40 @@ export default class Sidebar extends Component{
         console.clear();
         super(props);
         this.state = {
-            componentsArray:[]
+            componentsArray:[],
+            buttonprompt:false,
+            fieldVal: ""
         }
-        this.buttonclick = this.buttonclick.bind(this);
+        this.onUpdate=this.onUpdate.bind(this);
+        this.bclick = this.bclick.bind(this);
         this.h1click = this.h1click.bind(this);
         this.h2click = this.h2click.bind(this);
         this.tfclick = this.tfclick.bind(this);
-        //this._onButtonClick2 = this._onButtonClick2.bind(this);
     }
-    buttonclick() {
-        
+    // setbuttoncolor(color){
+    //     this.setState({buttoncolor:color});
+    //     console.log(this.state.buttoncolor);
+    // }
+    onUpdate = (val) => {
+        console.log(val);
         this.setState({
-            componentsArray: this.state.componentsArray.concat(
-                <Draggable>
-                    <button type="button">
-                Click Me!
-            </button>
-                </Draggable>
-            
-            )
+          fieldVal: val
+        })
+        this.setState({
+            buttonprompt:false
         });
-        console.log(this.state.componentsArray);
         
+    };
+    bclick(){
+        this.setState({
+            buttonprompt:true
+        });
+        // this.setState({
+        //     componentsArray: this.state.componentsArray.concat(
+        //         <Button/>
+        //     )
+        // });
+        // console.log(this.state.componentsArray);
     }
     h1click() {
         this.setState({
@@ -66,11 +80,16 @@ export default class Sidebar extends Component{
         return(
             <div class="fixoverflow">
                 <div class="sidebar">
-                    <button onClick={this.buttonClick}>Button</button>
+                    <button onClick={this.bclick}>B</button>
                     <button onClick={this.h1click}>H1</button>
                     <button onClick={this.h2click}>H2</button>
                     <button onClick={this.tfclick}>Textfield</button>
                     <br/>
+                    {this.state.buttonprompt ?
+                    <ButtonPrompt onUpdate={this.onUpdate} />:
+                    null
+                    }
+                    
                 </div>
                 <BlankTemplate rendercomponents={this.state.componentsArray}/>
             </div>
